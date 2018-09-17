@@ -1,5 +1,8 @@
-  group
   
+  
+  group(collection, key)   
+  group(collection, [predicate])   
+    
   ```
   group(collection, key) {
     var realKey, isKey = typeof key === 'string'
