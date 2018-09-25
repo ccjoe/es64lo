@@ -1,5 +1,5 @@
   
-  
+  ### group
   group(collection, key)   
   group(collection, [predicate])   
     
@@ -13,3 +13,8 @@
     }, {})
   }
   ```
+  
+  
+  ### findIndex
+  var array = [{name: 'joe', age: 25}, {name: 'cora', age: 22}]
+  array.findIndex(p => p.name==='joe')
