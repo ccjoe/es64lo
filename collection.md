@@ -4,10 +4,10 @@
   group(collection, [predicate])   
     
   ```
-  group(collection, key) {
-    var realKey, isKey = typeof key === 'string'
+  group(collection, predicate) {
+    var realKey, isKey = typeof predicate === 'string'
     return collection.reduce((returnVal, item) => {
-        realKey = isKey ? key : key(item);
+        realKey = isKey ? predicate : predicate(item);
         (returnVal[realKey] = returnVal[realKey] || []).push(item)
       return returnVal
     }, {})
